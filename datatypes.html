@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data value types in js</title>
+</head>
+<body>
+    <script>
+        //js data value types
+        //primitive-immutablesingle value data types in js
+        // string,number,boolean,undefined,null,bigint and symbol
+        //string
+        // var myName="siddhika";
+        // console.log(myNumber);
+        //number
+        // var myMob=749873880;
+        // console.log(myName + "mobile number is" + myMob);
+        // //boolean
+        // var isMarried=false;
+        // console.log(myName + "is married ?" + ismarries);
+        //undefined
+        // var myEmail;
+        // console.log(myEmail);
+        // console.log(typeof(myEmail));
+        //null
+        // var myAddress=null;
+        // console.log(myAdress);
+        // console.log(typeof(myAddress));
+        //symbol
+        // var var1=Symbol("vikas");
+        // var var2=Symbol("vikas");
+        // console.log(var1==var2);
+        // reference type(object)--mutable is memory and keep the data in key value pair
+        // object{},function(),array[]
+        //objects-collection(pair) of keys(properties) and its value
+        //create an object-using literal way and new keyword
+        //object1
+        let student={
+           name:"siddhika",
+           age:19,
+           isMarried:false,
+           address:{
+            streetno:4,
+            pincode:201009,
+            city:"gzb"
+           },
+           education:["10th","12th","b.tech"],
+           degree:"b.tech",
+           branch:"cse",
+           year:2025,
+           getinfo:function(){
+            return "my current education is" + student.degree;
+           }
+        };
+        console.log(student);
+        
+        // console.log(myInfo.name);
+        // //object length
+        // var keys=Object.keys(myInfos);
+        // console.log(keys.length);
+        // //function---block of reusable codes
+        // function call(){
+        //     var num1=45;
+        //     var num2=40;
+        //     var add=num1+num2;
+        //     console.log("addition " + add);
+        // }
+        // // array--collection of data types
+        // let studentList=["st1","st2","st3","st3"]
+        // console.log(student.List[0]);
+//find keys in objects
+console.log('name' in student);
+//delete keys in objects
+// console.log(delete student name);
+//find length of objects
+let keyslength=object.keys(student);
+console.log(keyslength.length);
+//iterate keys of object
+for(let i=0;i<keyslength.length;i++){
+    console.log(student[keyslength[i]]);
+
+}
+//for in-loop
+for(let x in student){
+    console.log(student[x]);
+}
+
+//create object using new keyword
+let myinfo=new object();
+myinfo.name="vinay";
+myinfo.age=23;
+myinfo.address="gzb";
+myinfo.mob="26546324879";
+myinfo.ismarried=false;
+console.log(myinfo,name);
+    </script>
+    
+</body>
+</html>
